@@ -34,10 +34,31 @@ header {
 }
 
 .sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding: 16px;
   background-color: var(--light-blue);
   grid-column: 1 / 2;
   grid-row: 1 / 3;
   color: var(--white);
+}
+
+.sidebar div,
+.sidebar li {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.sidebar .icon {
+  filter: invert(100%);
 }
 
 main {
